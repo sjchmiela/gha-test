@@ -10,7 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Job A1 - Will succeed
-        run: echo "Job A1 completed successfully"
+        run: |
+          sleep 10
+          echo "Job A1 completed successfully"
 
   B1:
     runs-on: ubuntu-latest
