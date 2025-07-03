@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: |
-          echo "abc" > ./README.md
+          echo "abcdef" > ./README.md
       - uses: actions/cache/save@v4
         id: cache
         with:
