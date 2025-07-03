@@ -1,0 +1,15 @@
+on:
+  push: {}
+  workflow_dispatch: {}
+
+jobs:
+  add_cache:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout
+      - uses: actions/cache/save@v4
+        id: cache
+        with:
+          path: ./README.MD
+          key: custom-key
+              
