@@ -12,6 +12,6 @@ jobs:
       - uses: actions/cache/save@v4
         id: cache
         with:
-          path: ./README.md
+          path: ./*
           key: custom-key
               
