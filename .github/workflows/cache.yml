@@ -6,7 +6,7 @@ jobs:
   add_cache:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout
+      - uses: actions/checkout@v4
       - uses: actions/cache/save@v4
         id: cache
         with:
