@@ -1,6 +1,9 @@
 on:
   push: {}
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      key:
+        required: true
 
 jobs:
   add_cache:
